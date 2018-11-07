@@ -3,24 +3,26 @@
 <head>
   <meta charset="utf-8">
   
-  <title>my first sharing | Better coder</title>
+  <title>crontab定时器的使用 | Better coder</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
+  <meta name="keywords" content="Linux" />
   
   
   
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta name="keywords" content="Java&#x2F;Python&#x2F;js">
+  
+  <meta name="description" content="Crontab定时器的使用date: 2018-11-08 01:34:37tags: Linux 1. Install  安装可执行以下命令查看是否已安装Crontab  crontab -l 若未安装，执行一下命令安装： Ubuntu: apt-get install cron Centos:  yum install vixie-cron 使用如下命令查看Crontab的执行状态： serv">
+<meta name="keywords" content="Linux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="My first sharing">
-<meta property="og:url" content="https://github.com/SiyuFlex/lsiy/2018/06/09/hello-world/index.html">
+<meta property="og:title" content="Crontab定时器的使用">
+<meta property="og:url" content="https://github.com/SiyuFlex/lsiy/2018/11/08/Crontab in Linux/index.html">
 <meta property="og:site_name" content="Better coder">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="Crontab定时器的使用date: 2018-11-08 01:34:37tags: Linux 1. Install  安装可执行以下命令查看是否已安装Crontab  crontab -l 若未安装，执行一下命令安装： Ubuntu: apt-get install cron Centos:  yum install vixie-cron 使用如下命令查看Crontab的执行状态： serv">
 <meta property="og:locale" content="english">
-<meta property="og:updated_time" content="2018-06-09T16:10:42.164Z">
+<meta property="og:updated_time" content="2018-11-07T18:32:26.225Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="My first sharing">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="Crontab定时器的使用">
+<meta name="twitter:description" content="Crontab定时器的使用date: 2018-11-08 01:34:37tags: Linux 1. Install  安装可执行以下命令查看是否已安装Crontab  crontab -l 若未安装，执行一下命令安装： Ubuntu: apt-get install cron Centos:  yum install vixie-cron 使用如下命令查看Crontab的执行状态： serv">
   
     <link rel="alternate" href="/atom.xml" title="Better coder" type="application/atom+xml">
   
@@ -160,7 +162,7 @@
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-hello-world" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;"><article id="post-Crontab in Linux" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="article-inner">
     
     
@@ -168,7 +170,7 @@
         
   
     <h1 class="thumb" class="article-title" itemprop="name">
-      My first sharing
+      Crontab定时器的使用
     </h1>
   
 
@@ -176,8 +178,8 @@
     
     <div class="article-meta">
       
-	<a href="/lsiy/2018/06/09/hello-world/" class="article-date">
-	  <time datetime="2018-06-09T15:15:55.198Z" itemprop="datePublished">2018-06-09</time>
+	<a href="/lsiy/2018/11/08/Crontab in Linux/" class="article-date">
+	  <time datetime="2018-11-07T17:34:37.000Z" itemprop="datePublished">2018-11-08</time>
 	</a>
 
       
@@ -191,15 +193,34 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h2 id="Crontab定时器的使用"><a href="#Crontab定时器的使用" class="headerlink" title="Crontab定时器的使用"></a>Crontab定时器的使用</h2><p>date: 2018-11-08 01:34:37<br>tags: Linux</p>
+<h2 id="1-Install-安装"><a href="#1-Install-安装" class="headerlink" title="1. Install  安装"></a>1. Install  安装</h2><p>可执行以下命令查看是否已安装Crontab<br>  <em>crontab -l</em></p>
+<p>若未安装，执行一下命令安装：</p>
+<pre><code>Ubuntu: apt-get install cron
+Centos:  yum install vixie-cron
+</code></pre><p>使用如下命令查看Crontab的执行状态：</p>
+<pre><code>service cron status
+</code></pre><p>启动/关闭：</p>
+<pre><code>service cron start(restart) / close
+</code></pre><h2 id="2-Basic-order-基础命令"><a href="#2-Basic-order-基础命令" class="headerlink" title="2. Basic order 基础命令"></a>2. Basic order 基础命令</h2><pre><code>crontab -l/e/u/r
+</code></pre><p> -l  查看当前用户的定时任务<br> -u 切换用户<br> -e 编辑当前用户的定时任务<br> -r 删除定时任务<br><strong>Exp： crontab -u user -e</strong></p>
+<h2 id="3-Edit-Timely-Jobs-编辑定时任务"><a href="#3-Edit-Timely-Jobs-编辑定时任务" class="headerlink" title="3. Edit Timely Jobs 编辑定时任务"></a>3. Edit Timely Jobs 编辑定时任务</h2><p>使用下列命令编辑定时任务</p>
+<pre><code>crontab -e
+</code></pre><p>再编辑文件的下方新建一行代表一个定时任务:<br>任务格式：<br>* <em> </em> <em> </em>  your command</p>
+<p><strong>上述五个星号分别代表：</strong><br>0-59 - Minutes 分钟<br>0-23 - Hour 小时<br>1-31 - date 日期<br>1-12 - Month 月份<br>0-7   -  Weekday 星期几</p>
+<p><strong>Eg:</strong><br>    _/2 service nginx restart                               每隔2分钟重启nginx<br>    0 23-7/1 <em>service nginx restart                   晚上23点到早上7点每隔1h重启<br>    0,30 18-23</em> service nginx restart           每天18点-23点每隔30min重启<br>    0-59/30 18-23 * service nginx restart   每天18点-23点每隔30min重启</p>
+<h2 id="4-Issues-遇到问题"><a href="#4-Issues-遇到问题" class="headerlink" title="4. Issues 遇到问题"></a>4. Issues 遇到问题</h2><p><strong><em>Assert:  我们尽量采用Crontab调用Shell脚本的方式来执行所需任务，不要直接将命令行写道crontab的任务文件中</em></strong>。</p>
+<p><strong>**下面列举几个本人遇到的问题：</strong><br><strong>1 &gt; Shell脚本执行顺畅，但crontab定是服务调用脚本不生效**</strong><br>首先请查看日志，分析问题：</p>
+<pre><code>tail -f /var/log/cron                  查看cron的log日志
+tail -n 200 /var/spool/mail/root       查看邮件服务器root用户日志的最后两百行
+tail -n 200 /var/spool/mail/[userName] 查看User用户日志的最后两百行
+</code></pre><p>请注意，在使用定时服务的时候最好默认所有相关的相关环境变量并没生效，请在脚本中source环境变量使之生效。<br><strong>Eg:</strong> </p>
+<pre><code>source ~/.bashrc 
+source /etc/profile
+</code></pre><p>若要使用浏览器等视图服务请在脚本中声明端口环境变量： </p>
+<pre><code>export DISPLAY=:0
+</code></pre><p><strong>2 &gt; Failed to connect to Mir: Failed to connect to server socket: No such file or directory</strong><br>使用脚本时若出现Mir Server并未成功启动请参考下方StackOverFlow的问题：<br><a href="https://stackoverflow.com/questions/48765488/how-to-fix-failed-to-connect-to-mir-error-in-python-selenium" target="_blank" rel="noopener">StackOverFlow</a><br><a href="https://askubuntu.com/questions/871092/failed-to-connect-to-mir-failed-to-connect-to-server-socket-no-such-file-or-di" target="_blank" rel="noopener">Detail discussion with above question</a></p>
+<p><strong><em>Reference 参考博客：</em></strong><br><a href="https://www.imooc.com/article/7889" target="_blank" rel="noopener">https://www.imooc.com/article/7889</a><br><a href="https://stackoverflow.com/questions/48765488/how-to-fix-failed-to-connect-to-mir-error-in-python-selenium" target="_blank" rel="noopener">https://stackoverflow.com/questions/48765488/how-to-fix-failed-to-connect-to-mir-error-in-python-selenium</a></p>
 
       
     </div>
@@ -252,15 +273,11 @@ var a = new Donate({
     
 <nav id="article-nav">
   
-    <a href="/lsiy/2018/11/08/Crontab in Linux/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Crontab定时器的使用
-        
-      </div>
-    </a>
   
+    <a href="/lsiy/2018/06/09/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">My first sharing</div>
+    </a>
   
 </nav>
 
@@ -273,7 +290,7 @@ var a = new Donate({
     <div id="toc" class="toc-article">
     <strong class="toc-title">Contents</strong>
     
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Crontab定时器的使用"><span class="nav-number">1.</span> <span class="nav-text">Crontab定时器的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Install-安装"><span class="nav-number">2.</span> <span class="nav-text">1. Install  安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Basic-order-基础命令"><span class="nav-number">3.</span> <span class="nav-text">2. Basic order 基础命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Edit-Timely-Jobs-编辑定时任务"><span class="nav-number">4.</span> <span class="nav-text">3. Edit Timely Jobs 编辑定时任务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-Issues-遇到问题"><span class="nav-number">5.</span> <span class="nav-text">4. Issues 遇到问题</span></a></li></ol>
     
     </div>
   </aside>
